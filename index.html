@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عيادة ابتسامة | احجز موعدك خلال دقيقة</title>
+<meta name="description" content="عيادة أسنان عصرية: فحص، تنظيف، تبييض، تقويم وزراعة. احجز موعدك عبر واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12343b;--mint:#e3f1ef;--sea:#1f7a78;--sun:#ffc857;--paper:#fbfdfc;--line:#cfe2df}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Cairo,Tahoma,sans-serif;color:var(--ink);background:var(--paper);line-height:1.8;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:22px;text-decoration:none}
+.logo span{color:var(--sea)}
+nav{display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none}
+nav a:hover{color:var(--sea)}
+.hero{background:var(--ink);color:#fff;border-radius:0 0 36px 36px;padding-bottom:64px}
+.hero header .logo span{color:var(--sun)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:36px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.25;font-weight:800}
+.hero p.lead{margin:18px 0 26px;max-width:46ch;color:#cfe6e3}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font:inherit;font-weight:800;border:0;border-radius:12px;padding:12px 26px;text-decoration:none;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+.facts{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;color:#cfe6e3;font-size:15px}
+.facts b{color:#fff}
+.book{background:#fff;color:var(--ink);border-radius:22px;padding:26px}
+.book h2{font-size:21px;margin-bottom:4px}
+.book small{color:#587178;display:block;margin-bottom:14px}
+label{display:block;font-weight:600;font-size:15px;margin-top:10px}
+input,select{width:100%;font:inherit;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.book .btn{width:100%;margin-top:18px;background:var(--sea);color:#fff}
+section{padding:72px 0}
+h2.t{font-size:clamp(26px,4vw,36px);margin-bottom:8px}
+.sub{color:#587178;max-width:56ch;margin-bottom:30px}
+.services{list-style:none;padding:0;border-top:1.5px solid var(--ink)}
+.services li{display:grid;grid-template-columns:200px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.services strong{font-size:20px}
+.services span{color:#455f66}
+.steps{background:var(--mint)}
+.steps ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.steps li{counter-increment:s;background:#fff;border-radius:18px;padding:22px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--sun);font-weight:800;margin-bottom:10px}
+.steps h3{font-size:19px}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hours table{width:100%;border-collapse:collapse}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:left;font-weight:600}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600;font-size:18px}
+details p{margin-top:8px;color:#455f66}
+footer{background:var(--ink);color:#cfe6e3;padding:34px 0;font-size:15px;text-align:center}
+footer a{color:var(--sun)}
+.wa{position:fixed;bottom:18px;left:18px;background:#25d366;color:#04361b;font-weight:800;text-decoration:none;padding:12px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+@media(max-width:820px){
+nav{display:none}
+.hero-grid,.hours{grid-template-columns:1fr}
+.steps ol{grid-template-columns:1fr}
+.services li{grid-template-columns:1fr;gap:2px}
+section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#top">عيادة <span>ابتسامة</span></a>
+      <nav><a href="#services">الخدمات</a><a href="#steps">كيف تحجز</a><a href="#hours">الدوام</a><a href="#faq">أسئلة شائعة</a></nav>
+    </header>
+    <div class="hero-grid" id="top">
+      <div>
+        <h1>أسنان سليمة،<br>وموعد بدون انتظار طويل</h1>
+        <p class="lead">فحص شامل وعلاج بلا ألم تقريبًا، مع شرح واضح لكل خطوة وسعر تعرفه قبل أن نبدأ.</p>
+        <a class="btn" href="#book">احجز موعدك</a>
+        <div class="facts"><span><b>+12</b> سنة خبرة</span><span><b>+4000</b> مريض راضٍ</span><span><b>معقّم</b> بالكامل بعد كل زيارة</span></div>
+      </div>
+      <form class="book" id="book" onsubmit="send(event)">
+        <h2>احجز عبر واتساب</h2>
+        <small>املأ بياناتك وسنردّ عليك لتأكيد الموعد.</small>
+        <label for="n">الاسم</label>
+        <input id="n" required autocomplete="name">
+        <label for="s">الخدمة</label>
+        <select id="s">
+          <option>فحص وتنظيف</option><option>تبييض الأسنان</option><option>حشو وعلاج عصب</option><option>تقويم</option><option>زراعة أسنان</option>
+        </select>
+        <label for="d">اليوم المناسب</label>
+        <select id="d">
+          <option>السبت</option><option>الأحد</option><option>الاثنين</option><option>الثلاثاء</option><option>الأربعاء</option><option>الخميس</option>
+        </select>
+        <button class="btn" type="submit">أرسل طلب الحجز</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="t">ماذا نعالج؟</h2>
+    <p class="sub">خمس خدمات تغطي أغلب ما يحتاجه الأهل والأطفال.</p>
+    <ul class="services">
+      <li><strong>فحص وتنظيف</strong><span>كشف مبكر للتسوس وإزالة الجير، ننصح به كل ستة أشهر.</span></li>
+      <li><strong>تبييض الأسنان</strong><span>جلسة واحدة في العيادة تفتّح اللون عدة درجات دون إضعاف المينا.</span></li>
+      <li><strong>حشو وعلاج عصب</strong><span>حشوات بلون السن، وعلاج عصب على جلسة أو جلستين مع تخدير موضعي.</span></li>
+      <li><strong>تقويم</strong><span>تقويم معدني أو شفاف للأطفال والبالغين، مع خطة واضحة لمدة العلاج.</span></li>
+      <li><strong>زراعة أسنان</strong><span>تعويض السن المفقود بزرعة ثابتة تشبه السن الطبيعي في الشكل والمضغ.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="steps" id="steps">
+  <div class="wrap">
+    <h2 class="t">كيف تحجز؟</h2>
+    <p class="sub">ثلاث خطوات، وكلها من جوالك.</p>
+    <ol>
+      <li><h3>أرسل طلبك</h3><p>اختر الخدمة واليوم، ويصلنا الطلب على واتساب.</p></li>
+      <li><h3>نؤكد الموعد</h3><p>نردّ عليك خلال ساعات الدوام بالوقت المتاح.</p></li>
+      <li><h3>تزورنا</h3><p>تُفحص، ونشرح لك الحالة والتكلفة قبل أي علاج.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap hours">
+    <div>
+      <h2 class="t">ساعات الدوام</h2>
+      <p class="sub">الحالات الطارئة تُستقبل حتى خارج المواعيد، اتصل بنا أولًا.</p>
+    </div>
+    <table>
+      <tr><td>السبت – الأربعاء</td><td>9:00 ص – 7:00 م</td></tr>
+      <tr><td>الخميس</td><td>9:00 ص – 2:00 م</td></tr>
+      <tr><td>الجمعة</td><td>مغلق</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="t">أسئلة شائعة</h2>
+    <details><summary>هل العلاج مؤلم؟</summary><p>نستخدم تخدير موضعي، ومعظم المرضى يشعرون بضغط خفيف فقط.</p></details>
+    <details><summary>كم تستغرق زيارة الفحص؟</summary><p>حوالي 30 دقيقة، وتشمل الفحص والتنظيف وخطة العلاج إن لزمت.</p></details>
+    <details><summary>هل تستقبلون الأطفال؟</summary><p>نعم، ونبدأ بزيارة تعارف قصيرة حتى يعتاد الطفل على المكان.</p></details>
+    <details><summary>هل أعرف التكلفة قبل العلاج؟</summary><p>نعم، نعطيك التكلفة بعد الفحص وقبل البدء، ولا نبدأ دون موافقتك.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 عيادة ابتسامة · هذا تصميم تجريبي لصفحة هبوط · <a href="#top">العودة للأعلى</a></div>
+</footer>
+
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener">راسلنا على واتساب</a>
+
+<script>
+// غيّر الرقم إلى رقمك بصيغة دولية بدون + (مثال: 970599123456)
+var PHONE = "972592753390";
+document.getElementById("wa").href = "https://wa.me/" + PHONE;
+function send(e){
+  e.preventDefault();
+  var msg = "مرحبًا، أريد حجز موعد.\nالاسم: " + document.getElementById("n").value +
+            "\nالخدمة: " + document.getElementById("s").value +
+            "\nاليوم المناسب: " + document.getElementById("d").value;
+  window.open("https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg), "_blank");
+}
+</script>
+</body>
+</html>
